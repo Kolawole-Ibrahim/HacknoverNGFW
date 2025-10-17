@@ -1,0 +1,67 @@
+# Hacknover NGFW Configuration
+firewall:
+  enabled: true
+  default_policy: "DROP"  # DROP or ACCEPT
+  interfaces:
+    - "eth0"
+    - "wlan0"
+
+dpi:
+  enabled: true
+  inspection_depth: 1024
+  protocols:
+    - "http"
+    - "https"
+    - "dns"
+    - "ftp"
+
+edr:
+  enabled: true
+  scan_interval: 300
+  log_level: "INFO"
+
+hips:
+  enabled: true
+  monitor_directories:
+    - "/bin"
+    - "/usr/bin"
+    - "/sbin"
+    - "/usr/sbin"
+
+logging:
+  level: "INFO"
+  file: "/var/log/hacknover_ngfw.log"
+  max_size: "10MB"
+  backup_count: 5
+
+web_interface:
+  enabled: true
+  host: "0.0.0.0"
+  port: 5000
+  debug: false
+
+rules:
+  - name: "Allow SSH"
+    protocol: "tcp"
+    port: 22
+    action: "ACCEPT"
+    direction: "IN"
+    
+  - name: "Allow HTTP"
+    protocol: "tcp"
+    port: 80
+    action: "ACCEPT"
+    direction: "IN"
+    
+  - name: "Allow HTTPS"
+    protocol: "tcp"
+    port: 443
+    action: "ACCEPT"
+    direction: "IN"
+    
+  - name: "Block Telnet"
+    protocol: "tcp"
+    port: 23
+    action: "DROP"
+    direction: "IN"
+EOF
