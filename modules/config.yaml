@@ -1,10 +1,10 @@
 # Hacknover NGFW Configuration
 firewall:
   enabled: true
-  default_policy: "DROP"  # DROP or ACCEPT
+  default_policy: "DROP"
   interfaces:
     - "eth0"
-    - "wlan0"
+    - "lo"
 
 dpi:
   enabled: true
@@ -30,7 +30,7 @@ hips:
 
 logging:
   level: "INFO"
-  file: "/var/log/hacknover_ngfw.log"
+  file: "./hacknover_ngfw.log"
   max_size: "10MB"
   backup_count: 5
 
@@ -46,22 +46,19 @@ rules:
     port: 22
     action: "ACCEPT"
     direction: "IN"
-    
   - name: "Allow HTTP"
     protocol: "tcp"
     port: 80
     action: "ACCEPT"
     direction: "IN"
-    
   - name: "Allow HTTPS"
     protocol: "tcp"
     port: 443
     action: "ACCEPT"
     direction: "IN"
-    
   - name: "Block Telnet"
     protocol: "tcp"
     port: 23
     action: "DROP"
     direction: "IN"
-EOF
+EOF:

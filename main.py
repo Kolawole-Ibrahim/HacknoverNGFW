@@ -26,7 +26,7 @@ from modules.management import ManagementClient
 from modules.utils import setup_logging, check_privileges, load_config
 
 # Default configuration path
-DEFAULT_CONFIG_PATH = 'C:\\Users\\godma\\nextgen_firewall\\modules\\config.yaml'
+DEFAULT_CONFIG_PATH = '/home/cyberkv/HacknoverNGFW/modules/config.yaml'
 
 # Global variables
 running = True
