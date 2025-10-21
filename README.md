@@ -1,4 +1,4 @@
-# HacknoverNGFWA 
+# HacknoverNGFW
  This is a Python-based Next Generation Firewall (NGFW) that provides network security features including packet filtering, intrusion detection, and traffic monitoring.
 
  Project Features
