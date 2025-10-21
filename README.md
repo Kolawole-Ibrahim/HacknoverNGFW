@@ -50,3 +50,5 @@ on your terminal:Python3 main.py
 
 
 Work in progress to for interfaces 
+
+project documentation coming soon!!!!
