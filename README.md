@@ -48,6 +48,26 @@ Check config.yaml for the configuration details and set up any neccesary network
 in your venv: python main.py
 on your terminal:Python3 main.py
 
+6. Installation 
+Install.sh still a little bit shaky, 
+to install, make it executable chmod +x install.sh 
+run with sudo ./install.sh
+
+still working on modifications 
+the script is excpected to:
+
+Check for Python 3 and verify version compatibility
+
+Install system packages like python3-pip, venv, etc.
+
+Create virtual environment in a venv or .venv directory
+
+Install Python dependencies from requirements.txt
+
+Set up configuration files and directories
+
+Set proper permissions for the application
+
 
 Work in progress to for interfaces 
 
