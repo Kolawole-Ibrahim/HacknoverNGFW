@@ -68,6 +68,21 @@ Set up configuration files and directories
 
 Set proper permissions for the application
 
+TO install for windows, Use:
+install.bat or install.ps1
+
+run install.bat to install
+
+if it didnt work 
+
+Try install.ps1
+
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser #on windows terminal
+
+&
+
+.\install.ps1
+
 
 Work in progress to for interfaces 
 
