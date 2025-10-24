@@ -13,6 +13,7 @@ Custom Rules: Configurable firewall rules for different security policies
 Logging: Comprehensive logging of network events and security incidents
 
 Main.py Module Explanation
+
 This is the main entry point for HacknoverNGFW which combines Deep Packet Inspection (DPI), Endpoint Detection & Response (EDR), and Host Intrusion Prevention System (HIPS) capabilities.
 
 Key Imports:
@@ -26,7 +27,7 @@ Utility functions: setup_logging, check_privileges, load_config
 def signal_handler(sig, frame): handles termination signals (Ctrl+C, kill commands)
 
 Setup guide.
-1. Clone the repository: it clone https://github.com/Kolawole-Ibrahim/HacknoverNGFW.git
+1. Clone the repository: git clone https://github.com/Kolawole-Ibrahim/HacknoverNGFW.git
 
 Change into the directory:cd HacknoverNGFW
 
@@ -53,7 +54,7 @@ Install.sh still a little bit shaky,
 to install, make it executable chmod +x install.sh 
 run with sudo ./install.sh
 
-still working on modifications 
+still working on modification,
 the script is excpected to:
 
 Check for Python 3 and verify version compatibility
