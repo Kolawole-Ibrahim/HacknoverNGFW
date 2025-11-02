@@ -1,0 +1,38 @@
+═══════════════════════════════════════════════════════════════
+  QUICK FIX - Dashboard Won't Open
+═══════════════════════════════════════════════════════════════
+
+PROBLEM: Dashboard not opening - missing dependencies
+
+SOLUTION 1 (Recommended):
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+1. Make sure you've run the installer
+2. Use the virtual environment Python:
+
+   venv\Scripts\python.exe protection_dashboard.py
+
+SOLUTION 2:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Double-click: LAUNCH_DASHBOARD.bat
+
+This automatically uses the virtual environment.
+
+SOLUTION 3 (If installer not run):
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+1. Run installer first:
+   - installer_simple.py
+   - or SIMPLE_INSTALL.bat
+
+2. Then use LAUNCH_DASHBOARD.bat
+
+═══════════════════════════════════════════════════════════════
+
+The dashboard needs:
+✓ Python installed
+✓ Virtual environment created
+✓ Dependencies installed (psutil, tkinter, etc.)
+
+All of these are done by the installer!
+
+═══════════════════════════════════════════════════════════════
+

@@ -1,0 +1,72 @@
+╔═══════════════════════════════════════════════════════════════╗
+║         HacknoverNGFW - Quick Start Guide                    ║
+║         For Non-Technical Users                              ║
+╚═══════════════════════════════════════════════════════════════╝
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📦 STEP 1: INSTALLATION
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+EASY WAY (Recommended):
+  1. Double-click: installer_gui.py
+  2. Click: "🚀 Install HacknoverNGFW"
+  3. Wait for it to finish
+  4. Done!
+
+ALTERNATIVE:
+  1. Double-click: scripts\install.bat
+  2. Follow the instructions
+  3. Done!
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🚀 STEP 2: START THE FIREWALL
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+EASY WAY (Recommended):
+  1. Double-click: START_FIREWALL.bat
+     OR
+     Double-click: gui_launcher.py
+  2. Click the green "▶ Start Firewall" button
+  3. Your computer is now protected! 🛡️
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📋 WHAT YOU'LL SEE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+In the GUI window you'll see:
+  • Status: Shows if firewall is running
+  • Module Status: Shows which protection modules are active
+  • Buttons:
+    - ▶ Start Firewall: Begin protection
+    - ⏹ Stop Firewall: Stop protection
+    - ⚙️ Check Installation: Verify everything is OK
+    - 📋 View Logs: See what threats were detected
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+⚠️ IMPORTANT NOTES
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. RUN AS ADMINISTRATOR
+   - Right-click files → "Run as Administrator"
+   - Or Windows will ask you automatically
+
+2. KEEP THE WINDOW OPEN
+   - Don't close the GUI while firewall is running
+   - Minimize it if you want, but keep it running
+
+3. CHECK LOGS REGULARLY
+   - Click "📋 View Logs" to see detected threats
+   - This helps you understand what the firewall is doing
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+❓ NEED HELP?
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+• See USER_GUIDE.md for detailed instructions
+• Check hacknover_ngfw.log for detailed logs
+• Visit: https://github.com/Kolawole-Ibrahim/HacknoverNGFW
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Enjoy your enhanced security! 🛡️
+

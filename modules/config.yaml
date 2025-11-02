@@ -1,0 +1,66 @@
+# Hacknover NGFW Configuration
+firewall:
+  enabled: true
+  default_policy: "DROP"
+  interfaces:
+    # Windows interfaces - update based on your system
+    # Use 'scapy.interfaces.show_interfaces()' in Python to list available interfaces
+    - "Ethernet 3"
+    - "Ethernet 2"
+
+dpi:
+  enabled: true
+  inspection_depth: 1024
+  protocols:
+    - "http"
+    - "https"
+    - "dns"
+    - "ftp"
+
+edr:
+  enabled: true
+  scan_interval: 300
+  log_level: "INFO"
+
+hips:
+  enabled: true
+  monitor_directories:
+    # Windows system directories
+    - "C:\\Windows\\System32"
+    - "C:\\Windows\\SysWOW64"
+    - "C:\\Program Files"
+    - "C:\\Program Files (x86)"
+
+logging:
+  level: "INFO"
+  file: "./hacknover_ngfw.log"
+  max_size: "10MB"
+  backup_count: 5
+
+web_interface:
+  enabled: true
+  host: "0.0.0.0"
+  port: 5000
+  debug: false
+
+rules:
+  - name: "Allow SSH"
+    protocol: "tcp"
+    port: 22
+    action: "ACCEPT"
+    direction: "IN"
+  - name: "Allow HTTP"
+    protocol: "tcp"
+    port: 80
+    action: "ACCEPT"
+    direction: "IN"
+  - name: "Allow HTTPS"
+    protocol: "tcp"
+    port: 443
+    action: "ACCEPT"
+    direction: "IN"
+  - name: "Block Telnet"
+    protocol: "tcp"
+    port: 23
+    action: "DROP"
+    direction: "IN"

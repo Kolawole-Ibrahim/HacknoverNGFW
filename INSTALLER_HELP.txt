@@ -1,0 +1,56 @@
+═══════════════════════════════════════════════════════════════
+  HacknoverNGFW Installer - Understanding the Status Messages
+═══════════════════════════════════════════════════════════════
+
+You're seeing these messages in the installer:
+
+✓ Python 3.12.6 - Found
+   ✅ This is GOOD! Python is installed and ready.
+
+⚠ Previous installation detected
+   ℹ️  This just means you've run the installer before.
+   You can:
+   - Click "Install" to update/reinstall
+   - It's safe to proceed
+
+⚠ Administrator privileges - Required
+   ℹ️  This means you're not running as Administrator.
+   
+   OPTIONS:
+   
+   Option 1: Install anyway (Recommended)
+   - You CAN install without admin privileges
+   - Just click "🚀 Install HacknoverNGFW"
+   - Installation will work fine
+   - You'll need admin when RUNNING the firewall later
+   
+   Option 2: Restart as Administrator (Optional)
+   - If the installer offers, click "Yes" to restart as admin
+   - This is only needed for full firewall functionality later
+   - Installation itself works without admin
+
+═══════════════════════════════════════════════════════════════
+
+✅ WHAT TO DO NOW:
+
+Simply click the green "🚀 Install HacknoverNGFW" button!
+
+The installer will:
+1. Create the virtual environment
+2. Install all dependencies
+3. Set up the firewall
+4. Create a desktop shortcut
+
+Even without admin privileges, the installation will complete
+successfully. You'll just need to run the firewall as admin later
+(Windows will prompt you automatically).
+
+═══════════════════════════════════════════════════════════════
+
+After installation:
+- Double-click START_FIREWALL.bat to launch
+- Or use the desktop shortcut
+- Windows will ask for admin permission (click Yes)
+
+═══════════════════════════════════════════════════════════════
+
