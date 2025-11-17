@@ -1,3 +1,5 @@
+![IMG-20251004-WA0001](https://github.com/user-attachments/assets/0bb7dc37-0714-485a-88a5-691961f5c5d5)
+
 # HacknoverNGFW
  This is a Python-based Next Generation Firewall (NGFW) that provides network security features including packet filtering, intrusion detection, and traffic monitoring.
 
